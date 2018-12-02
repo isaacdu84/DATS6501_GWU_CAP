@@ -31,4 +31,4 @@ The repository also includes a "utility_function.py" file, which includes all th
 ## Visualization
 Due to the complexity of hosting a prediction engine online, the risks associated with each road segment at certain times were first calculated and imported into a Tableau dashboard for the demonstration purpose.
 
-Please follow this link to view the demo application of this project.
+Please follow these links: [Dashboard1](https://public.tableau.com/profile/li7232#!/vizhome/CAP_Dashboard/Dashboard1), [Dashboard2](https://public.tableau.com/profile/li7232#!/vizhome/CAP_Dashboard2/Dashboard2) to view the demo application of this project.
