@@ -9,8 +9,16 @@ The crash events were first mapped to each road segment by their geographcial re
 The core concept is to use the probability generated from a classifier to represent such risks. To be more specific, this project will select and optimize a classifier using the positive and negative samples mentioned above, and generate probabilities of an instance being "positive". A more intuitive explanation to this metric would be that: given a certain time (day of week and hour of day), what is the probability of one or more crashes will occur?
 
 ## How to download the raw input data
+The raw data is stored in AWS S3 with public access enabled. Please use "Download_rawdata.ipynb" to download the data into the correct directories. Please make sure you are in the project root directory where all the other jupyter notebooks on modeling are located.
+
 
 ## How to run the scripts
+### Requirements
+Please use Python2 instead of Python3 as there may be incompatibility issues while processing undirectional graph and shapefiles.<br>
+Please ensure the following python packages are installed, upgraded or downgraded to the version listed below to avoid unexpected imcompatibility issues.<br>
+
+
+
 The scripts are written in Jupyter Notebooks with markdowns and comments, making it self-explanatory.<br>
 * "Modeling_AADT.ipynb" performs a systematic screening of features and models and trained the selected model to calculate the traffic volume associated with each road segment because traffic volume is an important feature to the prediction of risks.
 * "Modeling_crash.ipynb" performs the generation of training datasets (positive and negative samples for the classification) and trains a random forest classifier to predict such risks.
