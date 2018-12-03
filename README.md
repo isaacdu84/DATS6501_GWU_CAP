@@ -17,7 +17,7 @@ The raw data is stored in AWS S3 with public access enabled. Please use "Downloa
 Please use Python2 instead of Python3 as there may be incompatibility issues while processing undirectional graph and shapefiles.<br>
 Please ensure the following python packages are installed, upgraded or downgraded to the version listed below to avoid unexpected imcompatibility issues.<br>
 
-
+The current scripts build on the python library networkx 1.9.1. Please ensure that this verion is used to avoid syntax errors.
 
 The scripts are written in Jupyter Notebooks with markdowns and comments, making it self-explanatory.<br>
 * "Modeling_AADT.ipynb" performs a systematic screening of features and models and trained the selected model to calculate the traffic volume associated with each road segment because traffic volume is an important feature to the prediction of risks.
